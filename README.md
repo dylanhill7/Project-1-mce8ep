@@ -17,7 +17,7 @@ Link to Pipeline Files: https://github.com/dylanhill7/Project-1-mce8ep/tree/main
 
 Name of License: mce8ep-LICENSE
 
-Link to License: 
+Link to License: https://github.com/dylanhill7/Project-1-mce8ep/blob/main/mce8ep-LICENSE
 
 ## Problem Definition
 Initial general problem: Projecting athletic performance
