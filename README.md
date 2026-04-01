@@ -91,3 +91,22 @@ Additional decisions were made to reduce uncertainty in the modeling pipeline. T
 
 ## Metadata
 
+Schema:
+
+
+Data:
+
+| Table Name | Brief Description | Link |
+|---|---|---|
+| players | Lookup table containing a unique `player_id` for every player in the dataset along with the player’s name. This table enables consistent referencing of players across all other relational tables. | https://drive.google.com/file/d/1sLU4UZYEiLPEEgOTleZYI70hn-fh0J7n/view?usp=sharing |
+| seasons | Lookup table mapping each MLB season to a unique `season_id`. This table standardizes season references across the database and supports year-to-year comparisons. | https://drive.google.com/file/d/18YseNc34m7EQnmef13f8K09SdCn0LvEI/view?usp=sharing |
+| mainstream_batting_stats_breakout | Contains traditional batting statistics for players aged 20–25 (breakout candidates) by player and season. Includes metrics such as games played, plate appearances, HR, R, RBI, SB, AVG, OBP, SLG, and the derived OPS statistic. | https://drive.google.com/file/d/10bWgU9fVL18BWsQUh257iWhDH4TO0_8Q/view?usp=sharing |
+| advanced_batting_stats_breakout | Contains advanced sabermetric statistics for players aged 20–25 (breakout candidates) by player and season. Features include metrics such as walk rate, strikeout rate, ISO, BABIP, wOBA, wRC+, baserunning value, offensive value, defensive value, and WAR. | https://drive.google.com/file/d/1M7V1vq7eKC69RnbZuLQ0cBP_4sn41Bt1/view?usp=sharing |
+| mainstream_batting_stats_regression | Contains traditional batting statistics for players aged 30–35 (regression candidates) by player and season, including games played, plate appearances, HR, R, RBI, SB, AVG, OBP, SLG, and OPS. | https://drive.google.com/file/d/1m3DP8nzClkBSHgZ_HZAQwz1oVdxaiEeU/view?usp=sharing |
+| advanced_batting_stats_regression | Contains advanced sabermetric statistics for players aged 30–35 (regression candidates) by player and season, including BB%, K%, ISO, BABIP, wOBA, wRC+, BsR, Off, Def, and WAR. | https://drive.google.com/file/d/1QZhQdC_3bN9Jqd49-96ejJ254QtFN7dl/view?usp=sharing |
+
+Data Dictionary:
+
+
+Data Dictionary:
+
