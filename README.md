@@ -13,7 +13,7 @@ Link to Press Release: https://github.com/dylanhill7/Project-1-mce8ep/blob/main/
 
 Link to Data Folder: https://myuva-my.sharepoint.com/:f:/g/personal/mce8ep_virginia_edu/IgA33R9c9CWWSJC_mhF66DM_AZTih039TMHYSgmy73315zU?e=TBlCie
 
-Link to Pipeline Files:
+Link to Pipeline Files: https://github.com/dylanhill7/Project-1-mce8ep/tree/main/Pipeline-Files
 
 Name of License and link to file in top level of the repository
 
