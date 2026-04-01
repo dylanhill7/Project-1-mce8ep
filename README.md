@@ -53,3 +53,21 @@ Terminology:
 | On-Base Percentage (OBP) | KPI | A statistic measuring how often a player reaches base through hits, walks, or hit-by-pitch divided by total plate appearances. |
 | Slugging Percentage (SLG) | KPI | A statistic measuring a hitter’s power by calculating total bases divided by at-bats. |
 | OPS (On-Base Plus Slugging) | KPI | A combined offensive metric calculated as **OBP + SLG**, used to summarize a hitter’s overall ability to both reach base and hit for power. |
+
+Domain Explanation: This project exists within the domain of sports analytics, specifically the field of baseball analytics often referred to as sabermetrics. Sabermetrics focuses on using statistical analysis and data-driven methods to evaluate player performance and predict future outcomes. In Major League Baseball, teams increasingly rely on advanced metrics and large datasets to guide roster decisions, player development strategies, and game planning. Offensive performance in particular has become highly quantifiable through both traditional statistics—such as batting average, home runs, and runs batted in—and more advanced metrics like wRC+, launch angle, exit velocity, and barrel rate. These statistics provide insight into both the results a player produces and the underlying quality of their contact at the plate. By analyzing these performance indicators over time, analysts can identify patterns that signal whether a hitter is likely to improve significantly (a breakout season) or regress from previous performance levels. This project sits at the intersection of predictive analytics and sports performance analysis, using historical player statistics to identify National League hitters who may experience major changes in offensive production during the 2026 MLB season.
+
+Background reading: https://drive.google.com/drive/folders/1cxH_RrCYLtKwSGUqPwno0cDVrlP3R2OV?usp=drive_link
+
+Table: | Title of Article | Brief Description | Link |
+|---|---|---|
+| Sabermetrics & Baseball Analytics: The Science of Winning | Overview article explaining how sabermetrics uses statistical analysis and advanced metrics to evaluate baseball player performance and inform team decision-making. It highlights how data-driven strategies help teams identify undervalued players and predict future performance. | https://onlinegrad.syracuse.edu/blog/sabermetrics-baseball-analytics-the-science-of-winning-accessible/ |
+| Exploring Key Metrics and Methodology for Analyzing Offensive Performance | Article outlining a methodology for evaluating baseball hitters using advanced metrics such as wRC+, plate discipline measures, and batted-ball quality data to better understand offensive production. | https://adamsalorio.substack.com/p/exploring-key-metrics-and-methodology-2b7 |
+| The Prediction of Batting Averages in Major League Baseball | Research paper analyzing how Statcast data (exit velocity, launch angle, and hit distance) can be used to predict future batting averages. The study combines Statcast-based predictions with PECOTA forecasts and finds that combining multiple prediction methods improves forecasting accuracy. | https://www.sfu.ca/~tswartz/papers/sarah.pdf |
+| Aging Gracefully: Approaching Aging Curves and Advanced Stats, Part I | Article examining how player performance changes with age using advanced baseball statistics. It explores aging curves and shows that many offensive metrics improve rapidly early in a player’s career before peaking in the late 20s, providing insight into when players are likely to break out or begin declining. | https://thedynastyguru.com/2019/02/18/aging-gracefully-approaching-aging-curves-and-advanced-stats-part-i/ |
+| wRC and wRC+ | FanGraphs library article explaining the advanced metric wRC+, which measures a player’s overall offensive production while adjusting for ballpark and league context. The statistic is scaled so that 100 represents league-average performance, with values above or below indicating better or worse offensive output. | https://library.fangraphs.com/offense/wrc/ |
+
+## Data Creation
+
+
+## Metadata
+
