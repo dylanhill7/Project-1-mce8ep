@@ -3,11 +3,17 @@
 ... - short paragraph explaining the contents of the repository in executive form
 
 Name: Dylan Hill
+
 Net ID: mce8ep
+
 DOI:
-Link to Press Release: 
+
+Link to Press Release:
+
 Link to Data Folder: https://myuva-my.sharepoint.com/:f:/g/personal/mce8ep_virginia_edu/IgA33R9c9CWWSJC_mhF66DM_AZTih039TMHYSgmy73315zU?e=TBlCie
+
 Link to Pipeline Files:
+
 Name of License and link to file in top level of the repository
 
 ## Problem Definition
