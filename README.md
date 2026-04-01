@@ -58,7 +58,9 @@ Domain Explanation: This project exists within the domain of sports analytics, s
 
 Background reading: https://drive.google.com/drive/folders/1cxH_RrCYLtKwSGUqPwno0cDVrlP3R2OV?usp=drive_link
 
-Table: | Title of Article | Brief Description | Link |
+Table: 
+
+| Title of Article | Brief Description | Link |
 |---|---|---|
 | Sabermetrics & Baseball Analytics: The Science of Winning | Overview article explaining how sabermetrics uses statistical analysis and advanced metrics to evaluate baseball player performance and inform team decision-making. It highlights how data-driven strategies help teams identify undervalued players and predict future performance. | https://onlinegrad.syracuse.edu/blog/sabermetrics-baseball-analytics-the-science-of-winning-accessible/ |
 | Exploring Key Metrics and Methodology for Analyzing Offensive Performance | Article outlining a methodology for evaluating baseball hitters using advanced metrics such as wRC+, plate discipline measures, and batted-ball quality data to better understand offensive production. | https://adamsalorio.substack.com/p/exploring-key-metrics-and-methodology-2b7 |
