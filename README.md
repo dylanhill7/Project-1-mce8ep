@@ -105,8 +105,54 @@ Data:
 | mainstream_batting_stats_regression | Contains traditional batting statistics for players aged 30–35 (regression candidates) by player and season, including games played, plate appearances, HR, R, RBI, SB, AVG, OBP, SLG, and OPS. | https://drive.google.com/file/d/1m3DP8nzClkBSHgZ_HZAQwz1oVdxaiEeU/view?usp=sharing |
 | advanced_batting_stats_regression | Contains advanced sabermetric statistics for players aged 30–35 (regression candidates) by player and season, including BB%, K%, ISO, BABIP, wOBA, wRC+, BsR, Off, Def, and WAR. | https://drive.google.com/file/d/1QZhQdC_3bN9Jqd49-96ejJ254QtFN7dl/view?usp=sharing |
 
-Data Dictionary:
+Data Dictionary (overview):
 
+| Name | Data Type | Description | Example |
+|---|---|---|---|
+| player_id | Integer | Unique identifier assigned to each player in the dataset. Used to link player records across tables. | 145 |
+| player_name | String | Full name of the MLB player. Stored in the players lookup table. | Freddie Freeman |
+| season_id | Integer | Unique identifier for each MLB season used to standardize year references across tables. | 37 |
+| year | Integer | Calendar year corresponding to the MLB season. | 2023 |
+| G | Integer | Number of games played by the player during the season. | 155 |
+| PA | Integer | Total plate appearances for the player during the season. | 674 |
+| HR | Integer | Total home runs hit by the player during the season. | 32 |
+| R | Integer | Total runs scored by the player during the season. | 104 |
+| RBI | Integer | Total runs batted in by the player during the season. | 96 |
+| SB | Integer | Total stolen bases by the player during the season. | 18 |
+| AVG | Float | Batting average, calculated as hits divided by at-bats. | 0.298 |
+| OBP | Float | On-base percentage, measuring how often a player reaches base via hit, walk, or hit-by-pitch. | 0.378 |
+| SLG | Float | Slugging percentage, measuring total bases per at-bat and capturing power hitting. | 0.512 |
+| OPS | Float | On-base plus slugging percentage (OBP + SLG), used as a combined measure of offensive performance. | 0.890 |
+| BB% | Float | Walk rate, representing the percentage of plate appearances that result in a walk. | 11.2 |
+| K% | Float | Strikeout rate, representing the percentage of plate appearances that end in a strikeout. | 19.6 |
+| ISO | Float | Isolated power, measuring a hitter’s raw power by capturing extra-base hit ability (SLG − AVG). | 0.214 |
+| BABIP | Float | Batting average on balls in play, measuring how often a ball in play results in a hit. | 0.312 |
+| wOBA | Float | Weighted on-base average, an advanced metric that assigns run values to different offensive outcomes. | 0.368 |
+| wRC+ | Integer | Weighted runs created plus, measuring offensive production relative to league average (100 = league average). | 142 |
+| BsR | Float | Baserunning runs, estimating the number of runs a player contributes through baserunning. | 3.5 |
+| Off | Float | Offensive runs above average contributed by the player. | 24.1 |
+| Def | Float | Defensive runs above average contributed by the player. | 5.2 |
+| WAR | Float | Wins above replacement, estimating the total number of wins a player contributes compared to a replacement-level player. | 5.8 |
 
-Data Dictionary:
+Data Dictionary (quantification of uncertainty):
 
+- G (Games Played) — quantify uncertainty using the proportion of games played relative to a full season (G / 162) to reflect how representative the season sample is.
+- PA (Plate Appearances) — quantify uncertainty using standard error scaling with 1/ sq root of PA, since larger PA reduces sampling variability in rate statistics.
+- HR (Home Runs) — quantify uncertainty using a binomial or Poisson confidence interval for HR rate (HR / PA).
+- R (Runs Scored) — quantify uncertainty using variance in runs per plate appearance (R / PA) across seasons or through bootstrap resampling.
+- RBI (Runs Batted In) — quantify uncertainty using standard deviation of RBI per PA across seasons, accounting for context effects.
+- SB (Stolen Bases) — quantify uncertainty using a binomial confidence interval on stolen base attempts or SB rate per PA.
+- AVG (Batting Average) — quantify uncertainty using the binomial standard error
+- OBP (On-Base Percentage) — quantify uncertainty using a binomial confidence interval based on plate appearances.
+- SLG (Slugging Percentage) — quantify uncertainty using the variance of total bases per at-bat or bootstrap confidence intervals.
+- OPS (On-base + Slugging) — quantify uncertainty by propagating uncertainty from OBP and SLG using variance addition.
+- BB% (Walk Rate) — quantify uncertainty using a binomial standard error based on walks and PA.
+- K% (Strikeout Rate) — quantify uncertainty using a binomial standard error based on strikeouts and PA.
+- ISO (Isolated Power) — quantify uncertainty using bootstrap confidence intervals of ISO across plate appearances.
+- BABIP — quantify uncertainty using a binomial confidence interval on balls in play or comparing deviation from league mean BABIP.
+- wOBA — quantify uncertainty using bootstrap confidence intervals on weighted offensive outcomes.
+- wRC+ — quantify uncertainty using the variance in run contribution estimates relative to league average across seasons.
+- BsR (Baserunning Runs) — quantify uncertainty using standard deviation of baserunning run estimates derived from event-level outcomes.
+- Off (Offensive Runs Above Average) — quantify uncertainty through propagated variance from underlying offensive metrics used in its calculation.
+- Def (Defensive Runs Above Average) — quantify uncertainty using confidence intervals from defensive metric models or year-to-year variance.
+- WAR (Wins Above Replacement) — quantify uncertainty by propagating error from batting, baserunning, and defensive components, often estimated at roughly ±0.5–1 WAR per season.
