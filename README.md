@@ -1,12 +1,13 @@
 # DS 4320 Project 1: Slugger Signal
 
-... - short paragraph explaining the contents of the repository in executive form
+This repository contains the materials for a data science project analyzing Major League Baseball player performance using the relational model. It includes the dataset used in the analysis, pipeline files that perform data preparation and statistical analysis, and a press release summarizing the project’s findings for a general audience. The repository also includes a README that provides an overview of the project and organizes the documentation into several sections, including a problem definition, domain exposition, data creation process, and metadata describing the dataset structure. Together, these components document the full workflow from data construction to analysis and interpretation.
 
 Name: Dylan Hill
 
 Net ID: mce8ep
 
-DOI:
+DOI: <img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/4c328318-315e-4071-9aa5-0021692baab7" />
+
 
 Link to Press Release:
 
