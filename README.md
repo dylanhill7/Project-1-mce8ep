@@ -9,7 +9,7 @@ Net ID: mce8ep
 DOI: <img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/4c328318-315e-4071-9aa5-0021692baab7" />
 
 
-Link to Press Release:
+Link to Press Release: https://github.com/dylanhill7/Project-1-mce8ep/blob/main/Press-Release.md
 
 Link to Data Folder: https://myuva-my.sharepoint.com/:f:/g/personal/mce8ep_virginia_edu/IgA33R9c9CWWSJC_mhF66DM_AZTih039TMHYSgmy73315zU?e=TBlCie
 
